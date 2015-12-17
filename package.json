@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "description": "This repo and code explain how to use a SVG",
+  "license": "MIT",
+  "repository": "ragingwind/using-svg",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.me"
+  },
+  "scripts": {
+    "start": "http-server ./"
+  }
+}

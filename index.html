@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Using SVG</title>
+	</head>
+	<body>
+		<!-- including external style -->
+		<link rel="stylesheet" href="styles/main.css" media="screen" title="no title" charset="utf-8">
+
+		<!-- predefine svg icon -->
+		<svg style="display:none">
+			<defs>
+				<g id="svg-icon-def"><path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z"/></g>
+			</defs>
+		</svg>
+
+		<!-- svg file at img tag -->
+		<section>
+			<button>
+				<img src="images/menu.svg">
+			</button>
+			<span>icon button with svg file at img tag</span>
+		</section>
+
+		<!-- xlink:href -->
+		<section>
+			<button>
+				<svg width="40" height="40" viewBox="0 0 40 40">
+					<use xlink:href="#svg-icon-def"/>
+				</svg>
+			</button>
+			<span>icon button with xlink:href</span>
+		</section>
+
+		<!-- svg file in external stylesheet -->
+		<section>
+			<button class="svg-icon-afile" role="img"></button>
+			<span>icon button with svg file in external stylesheet</span>
+		</section>
+
+		<!-- data value in external stylesheet -->
+		<section>
+			<button class="svg-icon-data" role="img"></button>
+			<span>icon button with data(base64) in external stylesheet</span>
+		</section>
+
+		<!-- post insertion -->
+		<section>
+			<button id="svg-icon-code"></button>
+			<span>icon button with post insertion</span>
+		</section>
+
+		<script src="scripts/script.js" charset="utf-8"></script>
+	</body>
+</html>
